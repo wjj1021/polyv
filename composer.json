@@ -1,12 +1,12 @@
 {
     "name": "wjj1021/polyv",
     "description": "",
-    "license": "license",
+    "license": "MIT",
     "authors": [
         {
-            "name": "author name",
-            "email": "author email",
-            "homepage": "author homepage"
+            "name": "michael wu",
+            "email": "wjj1548@hotmail.com",
+            "homepage": "http://www.wuyixuan.net"
         }
     ],
     "homepage": "https://github.com/wjj1021/polyv",
