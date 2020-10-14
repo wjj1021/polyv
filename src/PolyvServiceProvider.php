@@ -35,7 +35,10 @@ class PolyvServiceProvider extends ServiceProvider
 
         // Register the service the package provides.
         $this->app->singleton('polyv', function ($app) {
-            return new Polyv;
+            $config = $app->make('config');
+            $appId = $config->get('polyv.appid');
+            $appSecret = $config->get('polyv.app_secret');
+            return new Polyv($appId,$appSecret);
         });
     }
 
@@ -48,7 +51,7 @@ class PolyvServiceProvider extends ServiceProvider
     {
         return ['polyv'];
     }
-    
+
     /**
      * Console-specific booting.
      *
